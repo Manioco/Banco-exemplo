@@ -1,18 +1,22 @@
-export class Cliente{
+export class Cliente {
     // Variáveis //
 
+    // Constructor //
+    constructor(nome, cpf, senha) {
+        this.nome = nome
+        this._cpf = cpf
+        this._senha = senha
+    }
+
+
     // GETs e SETs //
-    get cpf(){
+    get cpf() {
         return this._cpf
     }
 
 
-    // Constructor //
-    constructor(nome, cpf){
-        this.nome = nome
-        this._cpf = cpf
-    }
-
-
     // operações //
+    autenticar(senha) {
+        return true
+    }
 }
